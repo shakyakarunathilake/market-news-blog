@@ -20,7 +20,7 @@ const ErrorHandler: React.FC<ErrorHandlerProps> = ({ error }) => {
         <h6 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
           Oops! Something went wrong.
         </h6>
-        <p className="w-2/3 text-center text-gray-600 dark:text-gray-400">
+        <p className="w-full md:w-2/3 text-center text-gray-600 dark:text-gray-400">
           Unable to load news at this time. Our team has been notified and is
           working to restore the service. <br />
           Please try again later.
