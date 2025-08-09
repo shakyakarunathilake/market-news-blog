@@ -48,8 +48,8 @@ export default async function Page() {
         <Image
           src={BlottStudioLogo}
           alt="Blott Studio Logo"
-          width={100}
-          height={100}
+          width={200}
+          height={48.2}
         />
       </div>
       <ContentWrapper error={error}>
