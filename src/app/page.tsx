@@ -54,9 +54,11 @@ export default async function Page() {
       </div>
       <ContentWrapper error={error}>
         <div className="pb-[44px] lg:pb-[48px]">
-          <h1 className="w-full text-[40px] leading-[47px] font-normal tracking-[0%] uppercase md:w-2/3 lg:w-1/2 lg:text-[70px] lg:leading-[98%]">
-            <span className="font-serif">Latest news from the world of</span>{" "}
-            <span className="font-mono">FINANCE</span>
+          <h1 className="w-full text-[40px] leading-[47px] font-normal tracking-[0%] uppercase lg:text-[70px] lg:leading-[98%]">
+            <span className="font-serif">
+              Latest news <br /> from the world <br /> of{" "}
+              <span className="font-mono">FINANCE</span>
+            </span>
           </h1>
         </div>
         <div className="grid grid-cols-1 gap-y-[44px] md:grid-cols-2 md:gap-x-[16px] lg:grid-cols-4 lg:gap-y-[60px]">
