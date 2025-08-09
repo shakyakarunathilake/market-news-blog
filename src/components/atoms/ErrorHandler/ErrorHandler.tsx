@@ -21,8 +21,8 @@ const ErrorHandler: React.FC<ErrorHandlerProps> = ({ error }) => {
           Oops! Something went wrong.
         </h6>
         <p className="w-2/3 text-center text-gray-600 dark:text-gray-400">
-          Unable to load news at this time. Our team has been notified
-          and is working to restore the service. <br />
+          Unable to load news at this time. Our team has been notified and is
+          working to restore the service. <br />
           Please try again later.
         </p>
       </div>

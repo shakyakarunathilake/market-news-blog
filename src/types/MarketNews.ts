@@ -1,6 +1,6 @@
 export type NewsItemType = {
   category: string;
-  datetime: number; 
+  datetime: number;
   headline: string;
   id: number;
   image: string;
