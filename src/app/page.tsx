@@ -5,18 +5,16 @@ import { unstable_noStore as noStore } from "next/cache";
 import Image from "next/image";
 import BlottStudioLogo from "@/assets/logos/blott-studio.png";
 import { revalidate } from "./api/market-news/route";
+import { getBaseUrl } from "@/utils/common";
 
 async function getMarketNews(): Promise<{
   data: NewsItemType[] | null;
   error?: string;
 }> {
   try {
-    const res = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_URL}/api/market-news`,
-      {
-        next: { revalidate: revalidate, tags: ["market-news"] },
-      },
-    );
+    const res = await fetch(`${getBaseUrl()}/api/market-news`, {
+      next: { revalidate: revalidate, tags: ["market-news"] },
+    });
 
     if (!res.ok) {
       const errorText = await res.text();
