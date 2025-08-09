@@ -43,7 +43,7 @@ export default async function Page() {
   const { data: marketNews, error } = await getMarketNews();
 
   return (
-    <main className="container mx-auto h-full w-full px-5 py-[44px] font-sans">
+    <main className="container mx-auto h-full w-full px-5 pt-[44px] font-sans">
       <div className="flex justify-center pb-[58px] lg:pb-[56.8px]">
         <Image
           src={BlottStudioLogo}
@@ -61,7 +61,7 @@ export default async function Page() {
             </span>
           </h1>
         </div>
-        <div className="grid grid-cols-1 gap-y-[44px] md:grid-cols-2 md:gap-x-[16px] lg:grid-cols-4 lg:gap-y-[60px]">
+        <div className="grid grid-cols-1 gap-y-[44px] pb-[44px] md:grid-cols-2 md:gap-x-[16px] lg:grid-cols-4 lg:gap-y-[60px]">
           {marketNews?.map((marketNewsItem, index) => (
             <div
               key={marketNewsItem.id}
