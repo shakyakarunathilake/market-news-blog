@@ -30,11 +30,7 @@ const variantConfig = {
   },
 };
 
-const ToastMessage: FC<ToastMessageProps> = ({
-  variant,
-  message,
-  onClose,
-}) => {
+const ToastMessage: FC<ToastMessageProps> = ({ variant, message, onClose }) => {
   const config = variantConfig[variant];
 
   return (

@@ -13,7 +13,7 @@ async function getMarketNews(): Promise<{
   try {
     const res = await fetch(`${getBaseUrl()}/api/market-news`, {
       next: { revalidate: REVALIDATE_GET_MARKET_NEWS, tags: ["market-news"] },
-      cache: "force-cache"
+      cache: "force-cache",
     });
 
     if (!res.ok) {

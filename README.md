@@ -43,19 +43,21 @@ src/
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm, yarn, pnpm, or bun
 - Finnhub API key (get one at [finnhub.io](https://finnhub.io))
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/shakyakarunathilake/blott-studio.git
 cd blott-studio
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -67,13 +69,15 @@ bun install
 ```
 
 3. Set up environment variables:
-Create a `.env.local` file in the root directory and add:
+   Create a `.env.local` file in the root directory and add:
+
 ```env
 FINNHUB_API_KEY=your_finnhub_api_key_here
 FINNHUB_BASE_URL=your_finnhub_base_url
 ```
 
 4. Run the development server:
+
 ```bash
 npm run dev
 # or
@@ -98,6 +102,7 @@ bun dev
 ## 🔧 Configuration
 
 The app uses various configuration files:
+
 - `next.config.ts` - Next.js configuration
 - `tailwind.config.ts` - Tailwind CSS configuration
 - `tsconfig.json` - TypeScript configuration
@@ -108,17 +113,20 @@ The app uses various configuration files:
 The application follows atomic design principles:
 
 ### Atoms
+
 - `ErrorHandler` - Error display component
 - `RedirectButton` - Navigation button component
 - `ToastMessage` - Notification component
 
 ### Molecules
+
 - `ContentWrapper` - Page layout wrapper
 - `NewsItem` - Individual news article component
 
 ## 🌐 API Integration
 
 The app integrates with the Finnhub API to fetch real-time market news. The API route is located at `/api/market-news` and handles:
+
 - Fetching general market news
 - Error handling and response formatting
 - Caching and revalidation strategies
@@ -126,6 +134,7 @@ The app integrates with the Finnhub API to fetch real-time market news. The API 
 ## 🎨 Styling
 
 This project uses Tailwind CSS 4 for styling with:
+
 - Responsive design utilities
 - Custom color schemes
 - Component-based styling approach
