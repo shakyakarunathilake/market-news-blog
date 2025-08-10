@@ -28,7 +28,7 @@ async function getMarketNews(): Promise<{
     const data = await res.json();
 
     return { error: undefined, data };
-  } catch (error) {
+  } catch {
     return {
       error: "Oops! Something went wrong. Please try again later.",
       data: null,
