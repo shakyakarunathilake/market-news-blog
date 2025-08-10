@@ -26,7 +26,7 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Blott Studio",
+  title: "Market News App",
 };
 
 export default function RootLayout({
