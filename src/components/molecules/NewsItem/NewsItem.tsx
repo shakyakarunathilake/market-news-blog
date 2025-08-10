@@ -22,7 +22,7 @@ const NewsItem = ({ newsItem }: Props) => {
           src={newsItem.image || NewsItemPlaceholderImage}
           alt={newsItem.headline}
           fill
-          className="object-cover transition-all duration-300 ease-in-out group-hover:scale-105"
+          className="object-cover transition-all duration-300 ease-in-out group-hover:scale-103"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
           placeholder="blur"
           blurDataURL={NewsItemPlaceholderImage.src}
@@ -30,7 +30,7 @@ const NewsItem = ({ newsItem }: Props) => {
         />
       </div>
       <div className="w-full">
-        <h6 className="font-sans text-2xl leading-[130%] font-normal -tracking-[4%] capitalize transition-opacity duration-200 ease-in-out group-hover:opacity-80">
+        <h6 className="font-sans text-2xl leading-[130%] font-normal -tracking-[4%] capitalize">
           {newsItem.headline}
         </h6>
       </div>
