@@ -1,4 +1,4 @@
-# Blott Studio - Market News App
+# Market News App
 
 A modern market news application built with Next.js that delivers real-time financial news and market updates. The app features a clean, responsive interface for browsing the latest market news stories.
 
@@ -52,8 +52,8 @@ src/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/shakyakarunathilake/blott-studio.git
-cd blott-studio
+git clone https://github.com/shakyakarunathilake/market-news-app.git
+cd market-news-app
 ```
 
 2. Install dependencies:
