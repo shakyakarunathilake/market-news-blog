@@ -70,7 +70,7 @@ bun install
 Create a `.env.local` file in the root directory and add:
 ```env
 FINNHUB_API_KEY=your_finnhub_api_key_here
-FINNHUB_BASE_URL=https://finnhub.io/api/v1
+FINNHUB_BASE_URL=your_finnhub_base_url
 ```
 
 4. Run the development server:
