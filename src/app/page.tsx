@@ -4,7 +4,7 @@ import { NewsItemType } from "@/types/MarketNews";
 import Image from "next/image";
 import BlottStudioLogo from "@/assets/logos/blott-studio.png";
 import { getBaseUrl } from "@/utils/common";
-import { REVALIDATE_GET_MARKET_NEWS } from "@/config/time";
+import { REVALIDATE_GET_MARKET_NEWS } from "@/config/common";
 
 async function getMarketNews(): Promise<{
   data: NewsItemType[] | null;
