@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Serif, Roboto, Roboto_Mono } from "next/font/google";
 import { ToastProvider } from "@/context/ToastContext";
 import "./globals.css";
+import { ReactNode } from "react";
 
 const notoSerif = Noto_Serif({
   subsets: ["latin"],
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html

@@ -1,13 +1,14 @@
 "use client";
 
 import ErrorHandler from "@/components/atoms/ErrorHandler/ErrorHandler";
+import { FC, ReactNode } from "react";
 
 interface ContentWrapperProps {
   error?: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
-const ContentWrapper: React.FC<ContentWrapperProps> = ({ error, children }) => {
+const ContentWrapper: FC<ContentWrapperProps> = ({ error, children }) => {
   return (
     <>
       <ErrorHandler error={error} />

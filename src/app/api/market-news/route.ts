@@ -1,8 +1,6 @@
 import { NewsItemType } from "@/types/MarketNews";
 import { NextResponse } from "next/server";
 
-export const revalidate = 300;
-
 export async function GET() {
   try {
     const res: Response = await fetch(

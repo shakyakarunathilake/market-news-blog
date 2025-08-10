@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, useCallback } from "react";
+import React, { createContext, useContext, useState, useCallback, FC, ReactNode } from "react";
 import ToastMessage from "@/components/atoms/ToastMessage/ToastMessage";
 
 type ToastVariant = "success" | "error" | "warning";
@@ -17,7 +17,7 @@ interface ToastState {
 
 const ToastContext = createContext<ToastContextType | undefined>(undefined);
 
-export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({
+export const ToastProvider: FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [toast, setToast] = useState<ToastState>({

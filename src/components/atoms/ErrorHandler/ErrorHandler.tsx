@@ -1,11 +1,11 @@
 import { useToast } from "@/context/ToastContext";
-import { useEffect } from "react";
+import { FC, useEffect } from "react";
 
 interface ErrorHandlerProps {
   error?: string;
 }
 
-const ErrorHandler: React.FC<ErrorHandlerProps> = ({ error }) => {
+const ErrorHandler: FC<ErrorHandlerProps> = ({ error }) => {
   const { showToast } = useToast();
 
   useEffect(() => {

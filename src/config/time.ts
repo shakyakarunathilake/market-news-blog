@@ -1,0 +1,1 @@
+export const REVALIDATE_GET_MARKET_NEWS = 300; // 5 minutes

@@ -1,5 +1,5 @@
 import { CloseIcon, ErrorIcon, SuccessIcon, WarningIcon } from "@/assets/icons";
-import React from "react";
+import React, { FC } from "react";
 
 type ToastVariant = "success" | "error" | "warning";
 
@@ -30,7 +30,7 @@ const variantConfig = {
   },
 };
 
-const ToastMessage: React.FC<ToastMessageProps> = ({
+const ToastMessage: FC<ToastMessageProps> = ({
   variant,
   message,
   onClose,

@@ -1,11 +1,10 @@
 import NewsItem from "@/components/molecules/NewsItem/NewsItem";
 import ContentWrapper from "@/components/molecules/ContentWrapper/ContentWrapper";
 import { NewsItemType } from "@/types/MarketNews";
-import { unstable_noStore as noStore } from "next/cache";
 import Image from "next/image";
 import BlottStudioLogo from "@/assets/logos/blott-studio.png";
-import { revalidate } from "./api/market-news/route";
 import { getBaseUrl } from "@/utils/common";
+import { REVALIDATE_GET_MARKET_NEWS } from "@/config/time";
 
 async function getMarketNews(): Promise<{
   data: NewsItemType[] | null;
@@ -13,7 +12,8 @@ async function getMarketNews(): Promise<{
 }> {
   try {
     const res = await fetch(`${getBaseUrl()}/api/market-news`, {
-      next: { revalidate: revalidate, tags: ["market-news"] },
+      next: { revalidate: REVALIDATE_GET_MARKET_NEWS, tags: ["market-news"] },
+      cache: "force-cache"
     });
 
     if (!res.ok) {
@@ -37,7 +37,6 @@ async function getMarketNews(): Promise<{
 }
 
 export default async function Page() {
-  noStore();
   const { data: marketNews, error } = await getMarketNews();
 
   return (
