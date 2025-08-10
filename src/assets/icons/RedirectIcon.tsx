@@ -1,6 +1,10 @@
 import React from "react";
 
-const RedirectIcon = () => {
+interface Props {
+  color?: string;
+}
+
+const RedirectIcon = ({ color = "currentColor" }: Props) => {
   return (
     <svg
       width="25"
@@ -9,10 +13,10 @@ const RedirectIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="12.1422" cy="12" r="9.5" stroke="white" />
+      <circle cx="12.1422" cy="12" r="9.5" stroke={color} />
       <path
         d="M9.8565 14.2861L14.1422 10.0004M14.1422 10.0004H9.14221M14.1422 10.0004V15.0004"
-        stroke="white"
+        stroke={color}
       />
     </svg>
   );
